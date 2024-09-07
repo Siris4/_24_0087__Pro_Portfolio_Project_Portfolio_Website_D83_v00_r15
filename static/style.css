@@ -1,0 +1,176 @@
+/* Global styles */
+body {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: #001f3f; /* deep navy blue */
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+/* About Me section */
+.about-me {
+    padding: 1rem 2rem; /* Reduced padding-top to 1rem to remove extra space */
+    background-color: rgba(20, 90, 20, 0.7); /* darker forest green with 70% opacity */
+    color: white;
+    text-align: center;
+}
+
+.about-me h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    margin-top: 0; /* Removed margin-top to eliminate space above */
+}
+
+.about-me p {
+    font-size: 1.2rem;
+}
+
+/* Projects section */
+.projects {
+    background-color: #e9e9e9;
+    padding: 2rem;
+    text-align: center;
+}
+
+.projects h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.project-item {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.project-text {
+    text-align: center;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-text h3 {
+    margin: 0 0 0.5rem;
+}
+
+.project-text a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+}
+
+.project-text a:hover {
+    color: #0056b3;
+}
+
+.thumbnail {
+    width: 150px;
+    height: auto;
+    border-radius: 5px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+/* Styling for "Click Me!" text */
+.click-me {
+    font-size: 8px;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    color: #007BFF; /* Blue color for techy look */
+    font-weight: bold;
+}
+
+/* Modal styling */
+.modal-checkbox {
+    display: none;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+}
+
+.modal-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+/* Modal display when the checkbox is checked */
+.modal-checkbox:checked + .modal {
+    display: flex;
+}
+
+/* Footer */
+footer {
+    background-color: rgba(20, 90, 20, 0.7); /* Same background color as About Me section */
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+footer a {
+    color: white; /* Keeping the color as white */
+    text-decoration: underline;
+}
+
+footer a:hover {
+    color: #ccc;
+}
+
+@media (max-width: 768px) {
+    .project-item {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <!-- Link to Google Fonts for Ubuntu -->
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <header>
+        <h1>Portfolio of Gavin "Siris" Martin</h1>
+        <p>Explore my projects and get in touch!</p>
+    </header>
+
+    <section class="about-me">
+        <h2>About Me</h2>
+        <p>
+            Greetings traveler. Gavin Martin here. I'm a super creative Full Stack Developer, addicted to coding, with a massive itch to fix problems.<br>
+            Here are just a few projects that I have worked on:
+        </p>
+    </section>
+
+    <section class="projects">
+        <h2>Projects</h2>
+        <div class="project-list">
+            <div class="project-item">
+                <div class="project-text">
+                    <h3>Project 1: Siris Flight Deals</h3>
+                    <a href="https://github.com/Siris4/_24_0043__SirisFlightDeals_W_D39_v00_r18" target="_blank">View Project</a>
+                </div>
+                <label for="modal1">
+                    <img src="{{ url_for('static', filename='images/1siris flight deals.png') }}" alt="Project 1 Image" class="thumbnail">
+                </label>
+                <input type="checkbox" id="modal1" class="modal-checkbox">
+                <div class="modal">
+                    <label for="modal1" class="modal-background"></label>
+                    <img src="{{ url_for('static', filename='images/1siris flight deals.png') }}" class="modal-content">
+                </div>
+            </div>
+
+            <div class="project-item">
+                <div class="project-text">
+                    <h3>Project 2: Jukebox Time Machine</h3>
+                    <a href="https://github.com/Siris4/_24_0050__JukeBox_Time_Machine_Env_Var_Encrypted_WORKING_W_D46_v00_r49_4" target="_blank">View Project</a>
+                </div>
+                <label for="modal2">
+                    <img src="{{ url_for('static', filename='images/2spotify.png') }}" alt="Project 2 Image" class="thumbnail">
+                </label>
+                <input type="checkbox" id="modal2" class="modal-checkbox">
+                <div class="modal">
+                    <label for="modal2" class="modal-background"></label>
+                    <img src="{{ url_for('static', filename='images/2spotify.png') }}" class="modal-content">
+                </div>
+            </div>
+
+            <div class="project-item">
+                <div class="project-text">
+                    <h3>Project 3: TinDog Website</h3>
+                    <a href="https://github.com/Siris4/_24_0062__TinDog_Website_Start_D58_r48" target="_blank">View Project</a>
+                </div>
+                <label for="modal3">
+                    <img src="{{ url_for('static', filename='images/3tindog.png') }}" alt="Project 3 Image" class="thumbnail">
+                </label>
+                <input type="checkbox" id="modal3" class="modal-checkbox">
+                <div class="modal">
+                    <label for="modal3" class="modal-background"></label>
+                    <img src="{{ url_for('static', filename='images/3tindog.png') }}" class="modal-content">
+                </div>
+            </div>
+
+            <div class="project-item">
+                <div class="project-text">
+                    <h3>Project 4: Blog Website</h3>
+                    <a href="https://github.com/Siris4/_24_0063__Day59_All_works_Finishing_Touches_W_D59_v00_r40" target="_blank">View Project</a>
+                </div>
+                <label for="modal4">
+                    <img src="{{ url_for('static', filename='images/4blog.png') }}" alt="Project 4 Image" class="thumbnail">
+                </label>
+                <input type="checkbox" id="modal4" class="modal-checkbox">
+                <div class="modal">
+                    <label for="modal4" class="modal-background"></label>
+                    <img src="{{ url_for('static', filename='images/4blog.png') }}" class="modal-content">
+                </div>
+            </div>
+
+            <div class="project-item">
+                <div class="project-text">
+                    <h3>Project 5: SQL Database Book Collection</h3>
+                    <a href="https://github.com/Siris4/_24_0067__SQL_Databases_WWW_D63_v00_r29" target="_blank">View Project</a>
+                </div>
+                <label for="modal5">
+                    <img src="{{ url_for('static', filename='images/5book collection.png') }}" alt="Project 5 Image" class="thumbnail">
+                </label>
+                <input type="checkbox" id="modal5" class="modal-checkbox">
+                <div class="modal">
+                    <label for="modal5" class="modal-background"></label>
+                    <img src="{{ url_for('static', filename='images/5book collection.png') }}" class="modal-content">
+                </div>
+            </div>
+
+            <div class="project-item">
+                <div class="project-text">
+                    <h3>Project 6: Movie Website and Database</h3>
+                    <a href="https://github.com/Siris4/_24_0068__My_Top_10_Movies_Website_and_Database_W_D64_v00_r26" target="_blank">View Project</a>
+                </div>
+                <label for="modal6">
+                    <img src="{{ url_for('static', filename='images/6movie database.png') }}" alt="Project 6 Image" class="thumbnail">
+                </label>
+                <input type="checkbox" id="modal6" class="modal-checkbox">
+                <div class="modal">
+                    <label for="modal6" class="modal-background"></label>
+                    <img src="{{ url_for('static', filename='images/6movie database.png') }}" class="modal-content">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Contact me at: <a href="mailto:gavin.L.martin@gmail.com">gavin.L.martin@gmail.com</a></p>
+    </footer>
+
+</body>
+</html>
